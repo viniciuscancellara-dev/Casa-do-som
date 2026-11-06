@@ -1,0 +1,265 @@
+:root {
+    --verde: #263b35;
+    --verde-claro: #65736b;
+    --terracota: #d96c43;
+    --creme: #fff8ef;
+    --papel: #f5f1e9;
+    --linha: #e4ddd2;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--verde);
+    background: var(--papel);
+    line-height: 1.6;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    color: inherit;
+}
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+header {
+    background: var(--creme);
+    border-bottom: 1px solid var(--linha);
+}
+.topo {
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.logo {
+    width: 245px;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--verde);
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+}
+nav a:hover,
+nav a.ativo {
+    border-color: var(--terracota);
+}
+.hero {
+    background: #e9e1d5;
+    padding: 72px 0;
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 48px;
+}
+.tag {
+    color: var(--terracota);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+h1,
+h2,
+h3 {
+    line-height: 1.15;
+}
+h1 {
+    font-size: clamp(38px, 5vw, 62px);
+    margin: 12px 0 18px;
+}
+h2 {
+    font-size: 34px;
+    margin: 0 0 18px;
+}
+h3 {
+    font-size: 21px;
+    margin: 10px 0;
+}
+p {
+    color: #59675f;
+}
+.hero p {
+    font-size: 18px;
+    max-width: 530px;
+}
+.hero-foto {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.botao {
+    display: inline-block;
+    background: var(--terracota);
+    color: white;
+    text-decoration: none;
+    padding: 13px 22px;
+    margin: 12px 8px 0 0;
+    border: 0;
+    border-radius: 4px;
+    font: inherit;
+    cursor: pointer;
+}
+.botao:hover {
+    background: #b95735;
+}
+.botao-secundario {
+    background: transparent;
+    color: var(--verde);
+    border: 1px solid var(--verde);
+}
+.botao-secundario:hover {
+    background: var(--verde);
+    color: white;
+}
+section {
+    padding: 66px 0;
+}
+.section-top {
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+.card {
+    background: var(--creme);
+    border: 1px solid var(--linha);
+    padding: 22px;
+    border-radius: 6px;
+}
+.card img {
+    width: 100%;
+    max-height: 165px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+.beneficios {
+    color: var(--creme);
+}
+.beneficios h2 {
+    color: var(--verde);
+}
+.beneficios p {
+    color: #d5ddd6;
+}
+.beneficios .tag {
+    color: #f0a17f;
+}
+.beneficios .card {
+    background: #304840;
+    border-color: #496057;
+}
+.duas-colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+.foto-lateral {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.lista {
+    padding-left: 20px;
+    color: #59675f;
+}
+.lista li {
+    margin: 9px 0;
+}
+.pagina-topo {
+    padding: 55px 0 35px;
+    background: #e9e1d5;
+}
+.pagina-topo h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+.formulario {
+    max-width: 720px;
+    background: var(--creme);
+    border: 1px solid var(--linha);
+    padding: 28px;
+    border-radius: 6px;
+}
+.campo {
+    margin-bottom: 18px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cfc7bb;
+    border-radius: 4px;
+    background: white;
+    color: var(--verde);
+    font: inherit;
+}
+textarea {
+    min-height: 125px;
+    resize: none;
+}
+
+.duas-campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.info-contato {
+    background: var(--verde);
+    color: var(--creme);
+    padding: 28px;
+    border-radius: 6px;
+}
+.info-contato p {
+    color: #d5ddd6;
+}
+.info-contato a {
+    color: #f0a17f;
+}
+.endereco {
+    border-left: 3px solid var(--terracota);
+    padding-left: 16px;
+    margin: 20px 0;
+}
+footer {
+    background: #1c2d28;
+    color: var(--creme);
+    padding: 30px 0;
+}
+footer p {
+    color: #c6d0c8;
+    margin: 5px 0;
+}
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
