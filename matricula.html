@@ -26,80 +26,67 @@
                     <p>Preencha os dados abaixo para demonstrar interesse em uma matrícula.</p>
                 </div>
             </section>
-            <section>
-                <div class="container duas-colunas" style="align-items: start">
-                    <div>
-                        <h2>Como funciona?</h2>
-                        <p>
-                            Depois do envio, a equipe da escola entraria em contato para confirmar os horários, explicar
-                            os valores e orientar os próximos passos.
-                        </p>
-                        <ul class="lista">
-                            <li>Escolha o curso de seu interesse.</li>
-                            <li>Informe seus dados de contato.</li>
-                            <li>Aguarde o retorno da secretaria.</li>
-                        </ul>
+            >
+            <div class="container duas-colunas" style="align-items: start">
+                <div>
+                    <h2>Como funciona?</h2>
+                    <p>
+                        Depois do envio, a equipe da escola entraria em contato para confirmar os horários, explicar os
+                        valores e orientar os próximos passos.
+                    </p>
+                    <ul class="lista">
+                        <li>Escolha o curso de seu interesse.</li>
+                        <li>Informe seus dados de contato.</li>
+                        <li>Aguarde o retorno da secretaria.</li>
+                    </ul>
+                </div>
+                <form class="formulario" action="#" method="get">
+                    <div class="campo">
+                        <label for="nome">Nome completo</label
+                        ><input type="text" id="nome" name="nome" placeholder="Seu nome" required />
                     </div>
-                    <form class="formulario" action="#" method="get">
+                    <div class="duas-campos">
                         <div class="campo">
-                            <label for="nome">Nome completo</label
-                            ><input type="text" id="nome" name="nome" placeholder="Seu nome" required />
-                        </div>
-                        <div class="duas-campos">
-                            <div class="campo">
-                                <label for="email">E-mail</label
-                                ><input type="email" id="email" name="email" placeholder="voce@email.com" required />
-                            </div>
-                            <div class="campo">
-                                <label for="telefone">Telefone</label
-                                ><input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" />
-                            </div>
+                            <label for="email">E-mail</label
+                            ><input type="email" id="email" name="email" placeholder="voce@email.com" required />
                         </div>
                         <div class="campo">
-                            <label for="curso">Curso desejado</label
-                            ><select id="curso" name="curso" required>
-                                <option value="">Selecione um curso</option>
-                                <option>Violão e guitarra</option>
-                                <option>Piano e teclado</option>
-                                <option>Bateria</option>
-                                <option>Canto</option>
-                            </select>
+                            <label for="telefone">Telefone</label
+                            ><input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" />
                         </div>
-                        <div class="campo">
-                            <label for="unidade">Unidade</label
-                            ><select id="unidade" name="unidade">
-                                <option>Centro</option>
-                                <option>Jardim</option>
-                            </select>
-                        </div>
-                        <div class="campo">
-                            <label for="experiencia">Você já toca algum instrumento?</label
-                            ><select id="experiencia" name="experiencia">
-                                <option>Estou começando</option>
-                                <option>Sim, um pouco</option>
-                                <option>Sim, já tenho experiência</option>
-                            </select>
-                        </div>
-                        <div class="campo">
-                            <label for="mensagem">Conte um pouco sobre seu interesse (opcional)</label
-                            ><textarea id="mensagem" name="mensagem" placeholder="Quero aprender..."></textarea>
-                        </div>
-                        <button class="botao" type="submit">Enviar interesse</button>
-                    </form>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="container rodape">
-                <div>
-                    <strong>Casa do Som</strong>
-                    <p>Música para aprender, criar e compartilhar.</p>
-                </div>
-                <div>
-                    <p>Rua das Artes, 125 — Centro</p>
-                    <p>(11) 4000-1234 · contato@casadosom.com.br</p>
-                </div>
+                    </div>
+                    <div class="campo">
+                        <label for="curso">Curso desejado</label
+                        ><select id="curso" name="curso" required>
+                            <option value="">Selecione um curso</option>
+                            <option>Violão e guitarra</option>
+                            <option>Piano e teclado</option>
+                            <option>Bateria</option>
+                            <option>Canto</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="unidade">Unidade</label
+                        ><select id="unidade" name="unidade">
+                            <option>Centro</option>
+                            <option>Jardim</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="experiencia">Você já toca algum instrumento?</label
+                        ><select id="experiencia" name="experiencia">
+                            <option>Estou começando</option>
+                            <option>Sim, um pouco</option>
+                            <option>Sim, já tenho experiência</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">Conte um pouco sobre seu interesse (opcional)</label
+                        ><textarea id="mensagem" name="mensagem" placeholder="Quero aprender..."></textarea>
+                    </div>
+                    <button class="botao" type="submit">Enviar interesse</button>
+                </form>
             </div>
-        </footer>
+        </main>
     </body>
 </html>

@@ -128,12 +128,11 @@ p {
     background: var(--verde);
     color: white;
 }
-section {
-    padding: 66px 0;
-}
+
 .section-top {
     max-width: 650px;
     margin-bottom: 30px;
+    padding: 66px 0;
 }
 .cards {
     display: grid;
@@ -247,19 +246,4 @@ textarea {
     border-left: 3px solid var(--terracota);
     padding-left: 16px;
     margin: 20px 0;
-}
-footer {
-    background: #1c2d28;
-    color: var(--creme);
-    padding: 30px 0;
-}
-footer p {
-    color: #c6d0c8;
-    margin: 5px 0;
-}
-.rodape {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
 }
